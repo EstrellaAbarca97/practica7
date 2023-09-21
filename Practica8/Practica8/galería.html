@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Galería - Little Star</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Evita que el carrusel sobresalga de la pantalla */
+        }
+    </style>
+</head>
+<body>
+    <div class="encabezado">
+        <img src="img/logo.png" alt="Logo Izquierda" class="logo">
+        <h1>Little Star</h1>
+        <img src="img/pizza.png" alt="Logo Derecha" class="logo">
+    </div>
+
+    <div class="intro-text">
+        <p>Ven y conócenos</p>
+    </div>
+
+    <div class="swiper-container">
+        <button class="btn-visit" onclick="window.location.href='index.html'">Volver</button>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/carrusel 1.png" alt="Imagen 1"></div>
+            <div class="swiper-slide"><img src="img/carrusel 2.webp" alt="Imagen 2"></div>
+            <div class="swiper-slide"><img src="img/carrusel 3.webp" alt="Imagen 3"></div>
+            <div class="swiper-slide"><img src="img/carrusel 4.jpg" alt="Imagen 3"></div>
+            <div class="swiper-slide"><img src="img/carrusel 5.jpg" alt="Imagen 3"></div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true, /* Para hacer el carrusel infinito */
+        });
+    </script>
+</body>
+</html>
+
